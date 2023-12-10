@@ -1,0 +1,15 @@
+.task{
+
+    width: "80%";
+    margin: "auto";
+    display: "flex";
+    justify-content: "space-around";
+    border: "1px solid light-gray";
+}
+
+.task-Button{
+    margin-left: 10;
+}
+.task-Text{
+    width: "70%"
+}
