@@ -9,6 +9,6 @@ export const taskReducer = {
   tasks: taskSlice.reducer,
 }
 export const rootReducer = combineReducers({
-  stateA: counterSlice.reducer,
-  stateB: taskSlice.reducer
+  counter: counterSlice.reducer,
+  tasks: taskSlice.reducer
 })

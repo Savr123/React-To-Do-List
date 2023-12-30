@@ -20,12 +20,12 @@ export default () => {
     const [isEdited, setIsEdited] = useState(false);
     const [editedId, setEditedId] = useState('0');
 
-    var taskStore = reduxStore.getState().stateB;
+    var taskStore = reduxStore.getState().tasks;
     const [tasks, setTasks] = useState([
         new Task({name: "asd", Id: generateUUID(), Status: WorkStatus.Complete, Text: "task1"}),
     ]);
     var tasksProps: ITasksState =  {
-        value: taskStore.value
+        Tasks: taskStore.Tasks
     }
 
     // useEffect(() => {

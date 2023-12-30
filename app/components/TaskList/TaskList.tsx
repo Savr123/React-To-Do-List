@@ -11,7 +11,7 @@ export const TaskList = (taskState: ITasksState) => {
         // dispatch(taskSlice.actions.removeTask);
     }
 
-    const tasks = taskState.value.map(
+    const tasks = taskState.Tasks.map(
         (task) => <Task
             key = {task.Id}
             Text = {task.Text}
