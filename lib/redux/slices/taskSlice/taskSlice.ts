@@ -38,6 +38,15 @@ export function todoReducer(state: Task[] = initialState, action: TodoAction): T
     }
 }
 
+export const taskSlice = createSlice({
+    name: 'taskList',
+    initialState,
+    reducers: 
+    {
+        todoReducer(state, action: TodoAction)
+    }
+})
+
 // export const taskSlice = createSlice(
 //     {
 //         name: 'taskList',
